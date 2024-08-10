@@ -1,0 +1,254 @@
+body {
+    font-family: Arial, sans-serif;
+    width: 100%;
+  }
+  
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #f0f0f0;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1e1e1e;
+    color: white;
+  }
+  
+  .navbar .logo {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .navbar .tabs {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar .tabs button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .navbar .tabs button.active,
+  .navbar .tabs button:hover {
+    background-color: #444;
+    color: #f5f5f5;
+  }
+  
+  .navbar .search-bar {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    width: 300px;
+    margin-right: 20px;
+  }
+  
+  .navbar .sign-out {
+    background-color: #e63946;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .navbar .sign-out:hover {
+    background-color: #d62839;
+  }
+  
+  .home-body {
+    display: flex;
+    flex-grow: 1;
+  }
+  
+  .menu-bar {
+    width: 200px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .menu-bar button {
+    background: none;
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+    color: #424446; 
+  }
+  
+  .menu-bar button.active {
+    background-color: #666; 
+    color: #fff; 
+  }
+  
+  .menu-bar button:hover {
+    background-color: #555;
+    color: #fff; 
+  }
+  
+  .sub-menu {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .sub-menu button {
+    background: none;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+    color: #424446; 
+  }
+  
+  .sub-menu button.active {
+    background-color: #555; 
+    color: #fff; 
+  }
+  
+  .sub-menu button:hover {
+    background-color: #444;
+    color: #fff; 
+  }
+  
+  .content-list {
+    margin-top: 2%;
+    margin-bottom: 4%;
+    padding:2%;
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    overflow-y: auto; 
+    background-color: #e0e0e0; 
+  }
+  
+  .content-card {
+    background-color: #fff;
+    border-radius: 12px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    height: 432.5px;
+    border: 1px solid #d1caca;
+  }
+  
+  .content-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+  }
+  
+  .content-image {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .content-info {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .content-info h3 {
+    margin: 0;
+    font-size: 22px; 
+  }
+  
+  .content-info p {
+    font-size: 15px; 
+    color: #666;
+    margin-top: 10px; 
+  }
+  
+  .actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px; 
+  }
+  
+  .rent-button,
+  .download-button {
+    padding: 12px 16px; 
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .rent-button {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .rent-button:hover {
+    background-color: #218838;
+  }
+  
+  .download-button {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .download-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .footer {
+    z-index: 1000;
+    background-color: #333;
+    color: white;
+    padding: 30px;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+  }
+  
+  .footer p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .favorite-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5em;
+    color: #ff0000;
+    transition: color 0.3s;
+  }
+  
+  .favorite-button:hover {
+    color: #cc0000;
+  }
+  

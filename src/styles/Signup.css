@@ -1,112 +1,110 @@
-/* General styles for the signup container */
 .signup-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-image: url("../../public/images/login.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    position: relative; 
-    padding: 20px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("../../public/images/login.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative; 
+  padding: 20px; 
+}
+
+/* Styles for the card-like form container */
+.signup-card {
+  width: 100%;
+  max-width: 500px;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: auto; /* Added overflow auto to ensure scroll on small screens */
+}
+
+/* Styles for the form elements */
+.signup-form .form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.signup-form .form-group {
+  flex: 1 1 calc(50% - 1rem);
+}
+
+.signup-form .form-group.full-width {
+  flex: 1 1 100%;
+}
+
+.signup-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.signup-form input,
+.signup-form select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.signup-form button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.signup-form button:hover {
+  background-color: #0056b3;
+}
+
+.signup-form .alert {
+  margin-bottom: 1rem;
+}
+
+/* Text alignment for links and messages */
+.text-center {
+  text-align: center;
+}
+
+.text-center p {
+  margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .signup-container {
+    padding: 10px; /* Reduced padding for very small screens */
   }
-  
-  /* Styles for the card-like form container */
+
+  .signup-form .form-group {
+    flex: 1 1 100%;
+  }
+
   .signup-card {
-    width: 100%;
-    max-width: 500px;
-    padding: 2rem;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    overflow: auto; /* Added overflow auto to ensure scroll on small screens */
+    padding: 1rem;
   }
-  
-  /* Styles for the form elements */
-  .signup-form .form-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
+
+  .signup-form button {
+    padding: 0.5rem;
   }
-  
+}
+
+@media (min-width: 768px) {
   .signup-form .form-group {
     flex: 1 1 calc(50% - 1rem);
   }
-  
-  .signup-form .form-group.full-width {
-    flex: 1 1 100%;
+}
+
+@media (min-width: 1200px) {
+  .signup-card {
+    max-width: 600px;
   }
-  
-  .signup-form label {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-weight: bold;
-  }
-  
-  .signup-form input,
-  .signup-form select {
-    width: 100%;
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .signup-form button {
-    width: 100%;
-    padding: 0.75rem;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .signup-form button:hover {
-    background-color: #0056b3;
-  }
-  
-  .signup-form .alert {
-    margin-bottom: 1rem;
-  }
-  
-  /* Text alignment for links and messages */
-  .text-center {
-    text-align: center;
-  }
-  
-  .text-center p {
-    margin: 0;
-  }
-  
-  /* Responsive adjustments */
-  @media (max-width: 576px) {
-    .signup-container {
-      padding: 10px; /* Reduced padding for very small screens */
-    }
-  
-    .signup-form .form-group {
-      flex: 1 1 100%;
-    }
-  
-    .signup-card {
-      padding: 1rem;
-    }
-  
-    .signup-form button {
-      padding: 0.5rem;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .signup-form .form-group {
-      flex: 1 1 calc(50% - 1rem);
-    }
-  }
-  
-  @media (min-width: 1200px) {
-    .signup-card {
-      max-width: 600px;
-    }
-  }
-  
+}

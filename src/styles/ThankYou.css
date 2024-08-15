@@ -1,0 +1,26 @@
+.thank-you-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .thank-you-message {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .thank-you-message h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .thank-you-message p {
+    font-size: 1.5rem;
+  }
+  
